@@ -1,0 +1,15 @@
+{
+  "name": "estudo-de-caso",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "docker compose up --build",
+    "install:all": "npm install --workspace backend && npm install --workspace frontend",
+    "test:backend": "npm --workspace backend test",
+    "build:frontend": "npm --workspace frontend run build"
+  }
+}
